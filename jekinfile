@@ -4,7 +4,7 @@ agent any
         stage('Checkout') {
             steps {
                 checkout scmGit(branches: [[name: '*/master']], extensions: [],
-userRemoteConfigs: [[url: 'github.com/SwimmyE/todoApi.git']])
+userRemoteConfigs: [[url: 'https://github.com/SwimmyE/todoApi.git']])
                 echo 'successful checkout'
     } }
     stage('Build and Package') {
